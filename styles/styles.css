@@ -45,7 +45,7 @@
 }
 
 .horlist.first {
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 li a {
@@ -87,12 +87,13 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-body h1 {
+.content h1 {
   font-weight: 700;
   font-size: 3em;
+  border-bottom: 2px solid rgba(83,45,143,1);
 }
 
 .content {
   padding: 10px;
-  margin: 10px 300px;
+  margin: 10px 400px;
 }
