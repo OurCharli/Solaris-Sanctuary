@@ -26,6 +26,12 @@
   border-radius: 5px;
 }
 
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 .navbar {
   background: linear-gradient(90deg, rgba(83,45,143,1) 0%, rgba(83,45,143,1) 25%, rgba(98,74,207,1) 100%);
   left: 0px;
@@ -46,6 +52,30 @@
 
 .horlist.first {
   margin-left: 300px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 5px;
+  left: 0;
+  background-color: rgb(144, 219, 241);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 li a {
@@ -69,12 +99,11 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
   color: rgb(144, 219, 241);
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -87,13 +116,17 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.content {
+  padding: 10px;
+  margin: 10px 400px;
+}
+
 .content h1 {
   font-weight: 700;
   font-size: 3em;
   border-bottom: 2px solid rgba(83,45,143,1);
 }
 
-.content {
-  padding: 10px;
-  margin: 10px 400px;
+.content p {
+  font-size: 10em;
 }
