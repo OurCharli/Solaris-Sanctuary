@@ -1,12 +1,21 @@
 
-body {
+/*Header Content*/
+
+
+.header{
+  background: linear-gradient(90deg, rgba(83,45,143,1) 0%, rgba(83,45,143,1) 25%, rgba(98,74,207,1) 100%);
   margin: 0px;
+  padding: 0px;
+  text-align: center;
+  overflow-x: hidden;
+  width: 100%;
+  left: 0px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-h1 {
-  font-family: "Open Sans", Lora, serif;
+.header h1 {
   color: white;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 700;
 }
 
@@ -17,32 +26,26 @@ h1 {
   border-radius: 5px;
 }
 
-.header {
-  background: linear-gradient(90deg, rgba(83,45,143,1) 0%, rgba(83,45,143,1) 25%, rgba(98,74,207,1) 100%);
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  overflow-x: hidden;
-  width: 100%;
-  left: 0px;
-}
-
 .navbar {
   background: linear-gradient(90deg, rgba(83,45,143,1) 0%, rgba(83,45,143,1) 25%, rgba(98,74,207,1) 100%);
   left: 0px;
 }
 
 .navbar.horizontal {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 1.25em;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
 }
 
 .horlist {
   float: left;
+}
+
+.horlist.first {
+  margin-left: 200px;
 }
 
 li a {
@@ -72,4 +75,24 @@ a:hover {
 
 a:active {
   text-decoration: underline;
+}
+
+
+
+/* Body Content*/
+
+
+body {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.content {
+  padding: 10px;
+  margin: 10px 300px;
 }
