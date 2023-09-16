@@ -15,8 +15,10 @@
 
 .header h1 {
   color: white;
-  font-size: 6em;
+  font-size: 8em;
   font-weight: 700;
+  margin: 0px;
+  padding: 0px;
 }
 
 .purplebar {
@@ -29,21 +31,25 @@
 .sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0px;
 }
 
-.navbar {
+.bar {
   background: linear-gradient(90deg, rgba(83,45,143,1) 0%, rgba(83,45,143,1) 25%, rgba(98,74,207,1) 100%);
   left: 0px;
 }
 
-.navbar.horizontal {
+.bar.horizontal {
   font-weight: 400;
   font-size: 1.25em;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+}
+
+div.sticky{
+  position: fixed;
 }
 
 .horlist {
@@ -78,7 +84,7 @@
   transform-origin: bottom left;
 }
 
-li a {
+.bar.horizontal li a {
   display: block;
   color: white;
   text-align: center;
@@ -87,22 +93,22 @@ li a {
   margin-left: 10px;
 }
 
-a:link {
+.bar.horizontal a:link {
   color: white;
   padding: 8px;
   text-decoration: none;
   
 }
   
-a:visited {
+.bar.horizontal a:visited {
   text-decoration: none;
 }
 
-a:hover {
+.bar.horizontal a:hover {
   color: rgb(144, 219, 241);
 }
 
-a:active {
+.bar.horizontal a:active {
   text-decoration: none;
 }
 
@@ -127,6 +133,38 @@ body {
   border-bottom: 2px solid rgba(83,45,143,1);
 }
 
+.content h2 {
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
 .content p {
-  font-size: 10em;
+  font-size: 1.1em;
+}
+
+.content div {
+  font-size: 1.1em;
+}
+
+.content li {
+  padding: 5px;
+}
+
+.content li a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.content li a:visited {
+  color: rgb(98,74,207);
+  text-decoration: none;
+}
+
+.content li a:active{
+  text-decoration: none;
+}
+
+.content li a:hover{
+  color: rgb(185, 149, 252);
+  text-decoration: underline;
 }
