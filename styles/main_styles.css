@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+li.navbar {
+    font-size: 3em;
+    font-weight: 400;
+    float: left;
+    padding: 0px 10px;
+}
+
+#heading {
+    width: 100%;
+    height: 75px;
+    background-color: #553198;
+    padding: 5px 225px;
+    color: white;
+    display: inline-block;
+}
+
+#heading_nav_bar {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    overflow: hidden;
+    list-style: none;
+}
+
+#icon_photo {
+    padding: 0px;
+    width: 70px;
+    height: 70px;
+    object-fit:scale-down;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: white;
+}
+  
