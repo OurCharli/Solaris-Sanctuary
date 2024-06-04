@@ -7,7 +7,6 @@ li.navbar {
     font-weight: 400;
     height: 100%;
     float: left;
-    display: flex;
 }
 
 li.photo_container {
@@ -55,6 +54,7 @@ div.dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size:calc(100% + 2vw);
 }
 
 #icon_photo {
